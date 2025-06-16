@@ -1,8 +1,8 @@
 {
     "journey": [
-        "I discovered my passion for data science during my undergraduate studies, where I was fascinated by how data could tell compelling stories and drive meaningful decisions. This curiosity led me to dive deep into statistics, programming, and machine learning.",
-        "Throughout my academic journey, I've worked on various projects ranging from predictive modeling to data visualization, always with the goal of extracting actionable insights from complex datasets. I believe that the best data science happens at the intersection of technical skills and domain expertise.",
-        "When I'm not analyzing data or building models, you can find me exploring new datasets, reading about the latest developments in AI, or contributing to open-source projects. I'm always eager to learn and apply new techniques to solve real-world problems."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     ],
     "highlights": [
         {
@@ -12,20 +12,20 @@
             "icon": "lightbulb"
         },
         {
-            "title": "Fast Learner",
-            "description": "Quick to adapt to new technologies and methodologies in the rapidly evolving field of data science.",
+            "title": "Critical Thinker",
+            "description": "Evaluate information objectively, identify patterns and anomalies, and draw well-reasoned conclusions from diverse data sources.",
             "color": "green",
             "icon": "lightning"
         },
         {
-            "title": "Team Player",
-            "description": "Excellent communication skills and experience working in collaborative environments.",
+            "title": "Data Storytelling",
+            "description": "Bridge the gap between data and decision-making by creating compelling stories that reveal insights and drive business outcomes.",
             "color": "purple",
             "icon": "users"
         },
         {
-            "title": "Results-Drive",
-            "description": "Focused on delivering measurable outcomes and creating value through data-driven insights.",
+            "title": "Time Management",
+            "description": "",
             "color": "orange",
             "icon": "chart"
         }

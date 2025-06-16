@@ -1,15 +1,15 @@
 [
     {
         "type": "work",
-        "title": "Data Science Intern",
-        "organization": "TechStart Analytics",
-        "location": "San Francisco, CA",
-        "period": "Jun 2023 - Aug 2023",
+        "title": "Data Analyst Intern",
+        "organization": "Job Buddies",
+        "location": "Remote – Toronto, ON",
+        "period": "April 2024 - February 2025",
         "description": [
-            "Developed predictive models for customer behavior analysis using Python and scikit-learn",
-            "Created interactive dashboards in Tableau to visualize key business metrics and trends",
-            "Collaborated with cross-functional teams to identify data-driven solutions for business challenges",
-            "Performed A/B testing analysis that led to 15% improvement in user engagement"
+            "Analyzed over 500,000 rows of cross-platform data using Python, SQL, and R from web logs.",
+            "Produced recurring bi-weekly performance reports in Excel using PivotTables and VLOOKUP across platforms.",
+            "Built and maintained interactive dashboards in Power BI and Tableau.",
+            "Collaborated with cross-functional stakeholders in marketing, product, and business development to define KPIs."
         ],
         "technologies": [
             "Python",
@@ -20,16 +20,15 @@
         ]
     },
     {
-        "type": "work",
-        "title": "Research Assistant",
-        "organization": "University Data Lab",
-        "location": "Berkeley, CA",
-        "period": "Jan 2023 - May 2023",
+        "type": "education",
+        "title": "B.S. in Computer Science, Minor in Data Science",
+        "organization": "Rutgers University",
+        "location": "New Brunswick, NJ",
+        "period": "August 2024",
         "description": [
-            "Conducted statistical analysis on healthcare datasets to identify patterns in patient outcomes",
-            "Implemented machine learning algorithms for medical diagnosis prediction",
-            "Published research findings in peer-reviewed conference proceedings",
-            "Mentored undergraduate students in data analysis techniques and statistical methods"
+            "Data Structures, Machine Learning Principles",
+            "Statistical Inference for Data Science",
+            "Design & Analysis of Project"
         ],
         "technologies": [
             "R",
@@ -37,45 +36,6 @@
             "Statistical Analysis",
             "Machine Learning",
             "Healthcare Data"
-        ]
-    },
-    {
-        "type": "education",
-        "title": "Bachelor of Science in Statistics",
-        "organization": "University of California, Berkeley",
-        "location": "Berkeley, CA",
-        "period": "2021 - 2024",
-        "description": [
-            "Concentration in Data Science and Machine Learning",
-            "Relevant Coursework: Statistical Learning, Probability Theory, Linear Algebra, Database Systems",
-            "Senior Capstone: \"Predicting Housing Prices using Advanced Regression Techniques\"",
-            "Dean's List (3 semesters), GPA: 3.7/4.0"
-        ],
-        "technologies": [
-            "Statistics",
-            "Probability",
-            "Linear Algebra",
-            "Data Structures",
-            "Algorithms"
-        ]
-    },
-    {
-        "type": "certification",
-        "title": "Machine Learning Specialization",
-        "organization": "Stanford University (Coursera)",
-        "location": "Online",
-        "period": "Completed 2023",
-        "description": [
-            "Comprehensive study of supervised and unsupervised learning algorithms",
-            "Hands-on projects in classification, regression, clustering, and neural networks",
-            "Final project: Built an end-to-end recommendation system using collaborative filtering",
-            "Certificate of completion with honors"
-        ],
-        "technologies": [
-            "Machine Learning",
-            "Neural Networks",
-            "TensorFlow",
-            "Octave/MATLAB"
         ]
     }
 ]

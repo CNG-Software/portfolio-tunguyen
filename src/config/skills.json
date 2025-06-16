@@ -61,25 +61,5 @@
             ],
             "color": "pink"
         }
-    ],
-    "proficiencyLevels": [
-        {
-            "level": "Advanced",
-            "description": "Python, SQL, Machine Learning, Statistical Analysis",
-            "color": "green",
-            "icon": "check-circle"
-        },
-        {
-            "level": "Intermediate",
-            "description": "R, Deep Learning, Cloud Platforms, Big Data Tools",
-            "color": "blue",
-            "icon": "lightning"
-        },
-        {
-            "level": "Learning",
-            "description": "Scala, MLOps, Advanced Deep Learning Architectures",
-            "color": "yellow",
-            "icon": "academic-cap"
-        }
     ]
 }

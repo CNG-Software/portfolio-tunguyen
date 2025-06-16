@@ -1,80 +1,26 @@
 [
     {
-        "title": "Customer Churn Prediction",
-        "description": "Built a machine learning model to predict customer churn using advanced ensemble methods and feature engineering techniques. Achieved 92% accuracy with actionable insights for retention strategies.",
-        "technologies": [
-            "Python",
-            "Scikit-learn",
-            "Pandas",
-            "XGBoost",
-            "Matplotlib"
-        ],
-        "category": "Machine Learning",
-        "impact": "25% reduction in churn rate",
-        "github": "https://github.com/tunguyen/customer-churn",
-        "demo": "https://churn-prediction-demo.com",
-        "image": "🔄"
+        "title": "Student Dormitory Allocation",
+        "description": "Led a cross-functional team to implement a custom dorm room assignment algorithm using Python to prioritize affordability and accessibility for over 2,000 students across 300 dorm rooms.",
+        "technologies": ["Python"],
+        "category": "Data Analysis",
+        "impact": "15% room assignment satisfaction improvement",
+        "github": "https://github.com/tuhoangcamnguyen/Assigning-Student-Dorm-Rooms-"
     },
     {
-        "title": "Sales Forecasting Dashboard",
-        "description": "Developed an interactive dashboard for sales forecasting using time series analysis and ARIMA models. Integrated real-time data visualization and automated reporting features.",
-        "technologies": ["Python", "Streamlit", "Plotly", "SQL", "Time Series"],
-        "category": "Data Visualization",
-        "impact": "15% improvement in forecast accuracy",
-        "github": "https://github.com/tunguyen/sales-forecast",
-        "demo": "https://sales-dashboard-demo.com",
-        "image": "📈"
+        "title": "Redistricting and Gerrymandering New Jersey Congressional Map",
+        "description": "Led the development of a redistricting algorithm using Python to create fair congressional maps, handling TIGER shape data with over 100,000 rows of precinct-level population data.",
+        "technologies": ["Python"],
+        "category": "Data Analysis",
+        "impact": "0.71% proportionality and 7.71% competitiveness improvement",
+        "github": "https://github.com/tuhoangcamnguyen/Redistricting-and-Gerrymandering-NJ-Congressional-map-"
     },
     {
-        "title": "Sentiment Analysis API",
-        "description": "Created a RESTful API for sentiment analysis of social media posts using NLP techniques and deep learning models. Deployed on AWS with scalable architecture.",
-        "technologies": ["Python", "TensorFlow", "FastAPI", "AWS", "Docker"],
-        "category": "NLP",
-        "impact": "10K+ API calls processed",
-        "github": "https://github.com/tunguyen/sentiment-api",
-        "demo": "https://sentiment-api-demo.com",
-        "image": "🎭"
-    },
-    {
-        "title": "Market Basket Analysis",
-        "description": "Performed comprehensive market basket analysis using association rule mining to identify product relationships and optimize cross-selling strategies for e-commerce platform.",
-        "technologies": ["R", "Apriori Algorithm", "Shiny", "dplyr", "ggplot2"],
-        "category": "Analytics",
-        "impact": "18% increase in cross-sales",
-        "github": "https://github.com/tunguyen/market-basket",
-        "demo": "https://market-analysis-demo.com",
-        "image": "🛒"
-    },
-    {
-        "title": "Healthcare Data Pipeline",
-        "description": "Designed and implemented an ETL pipeline for healthcare data processing, ensuring HIPAA compliance and enabling real-time analytics for patient monitoring systems.",
-        "technologies": [
-            "Python",
-            "Apache Airflow",
-            "PostgreSQL",
-            "Docker",
-            "AWS"
-        ],
-        "category": "Data Engineering",
-        "impact": "40% faster data processing",
-        "github": "https://github.com/tunguyen/healthcare-pipeline",
-        "demo": "https://healthcare-pipeline-demo.com",
-        "image": "🏥"
-    },
-    {
-        "title": "Fraud Detection System",
-        "description": "Built an anomaly detection system for financial transactions using unsupervised learning algorithms and real-time processing to identify fraudulent activities.",
-        "technologies": [
-            "Python",
-            "Isolation Forest",
-            "Apache Kafka",
-            "Redis",
-            "Grafana"
-        ],
-        "category": "Machine Learning",
-        "impact": "30% reduction in false positives",
-        "github": "https://github.com/tunguyen/fraud-detection",
-        "demo": "https://fraud-detection-demo.com",
-        "image": "🔒"
+        "title": "Twitter Data Analysis",
+        "description": "Conducted sentiment analysis on public figure tweets using Python, Pandas, and the VADER lexicon, analyzing trends and public perception across 10,000+ tweets.",
+        "technologies": ["Principal Component Analysis"],
+        "category": "Data Analysis",
+        "impact": "30% data interpretation improvement",
+        "github": "https://github.com/tuhoangcamnguyen/-Twitter-Data-Analysis"
     }
 ]

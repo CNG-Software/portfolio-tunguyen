@@ -5,16 +5,12 @@
     },
     "skills": {
         "title": "Technical Skills",
-        "subtitle": "A comprehensive toolkit for extracting insights from data and building intelligent systems",
         "proficiencyTitle": "Proficiency Levels"
     },
     "projects": {
-        "title": "Featured Projects",
-        "subtitle": "A selection of data science projects demonstrating my skills in machine learning, analytics, and data engineering"
+        "title": "Featured Projects"
     },
     "experience": {
-        "title": "Experience & Education",
-        "subtitle": "My journey in data science through education, professional experience, and continuous learning",
-        "additionalQualificationsTitle": "Additional Qualifications"
+        "title": "Experience & Education"
     }
 }
