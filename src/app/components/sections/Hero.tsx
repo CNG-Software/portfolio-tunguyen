@@ -1,10 +1,66 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/Button";
 import heroConfig from "../../../config/hero.json";
 
 export const Hero: React.FC = () => {
+    const [particles, setParticles] = useState<
+        Array<{
+            id: number;
+            x: number;
+            y: number;
+            size: number;
+            symbol: string;
+            animationDelay: number;
+            duration: number;
+        }>
+    >([]);
+
+    useEffect(() => {
+        // Data science symbols and elements
+        const symbols = [
+            "∑",
+            "μ",
+            "σ",
+            "π",
+            "∞",
+            "∫",
+            "∂",
+            "α",
+            "β",
+            "γ",
+            "χ²",
+            "R²",
+            "{}",
+            "[]",
+            "()",
+            "|",
+            "~",
+            "∈",
+            "∀",
+            "∃",
+        ];
+
+        const generateParticles = () => {
+            const newParticles = [];
+            for (let i = 0; i < 25; i++) {
+                newParticles.push({
+                    id: i,
+                    x: Math.random() * 100,
+                    y: Math.random() * 100,
+                    size: Math.random() * 20 + 10,
+                    symbol: symbols[Math.floor(Math.random() * symbols.length)],
+                    animationDelay: Math.random() * 10,
+                    duration: Math.random() * 20 + 15,
+                });
+            }
+            setParticles(newParticles);
+        };
+
+        generateParticles();
+    }, []);
+
     const handleButtonClick = (target: string) => {
         if (target.startsWith("#")) {
             // Internal scroll to section
@@ -21,9 +77,171 @@ export const Hero: React.FC = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center bg-[#caf0f8] pt-20"
+            className="min-h-screen flex items-center justify-center bg-[#caf0f8] pt-20 relative overflow-hidden"
         >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Animated Background */}
+            <div className="absolute inset-0 pointer-events-none">
+                {/* Floating Mathematical Symbols */}
+                {particles.map((particle) => (
+                    <div
+                        key={particle.id}
+                        className="absolute text-blue-200 opacity-20 select-none animate-bounce"
+                        style={{
+                            left: `${particle.x}%`,
+                            top: `${particle.y}%`,
+                            fontSize: `${particle.size}px`,
+                            animationDelay: `${particle.animationDelay}s`,
+                        }}
+                    >
+                        {particle.symbol}
+                    </div>
+                ))}
+
+                {/* Animated Network Connections */}
+                <div className="absolute inset-0">
+                    <svg className="w-full h-full opacity-10">
+                        <defs>
+                            <pattern
+                                id="grid"
+                                width="40"
+                                height="40"
+                                patternUnits="userSpaceOnUse"
+                            >
+                                <path
+                                    d="M 40 0 L 0 0 0 40"
+                                    fill="none"
+                                    stroke="#0077b6"
+                                    strokeWidth="0.5"
+                                />
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)" />
+
+                        {/* Animated connecting lines */}
+                        <g className="animate-pulse">
+                            <line
+                                x1="10%"
+                                y1="20%"
+                                x2="30%"
+                                y2="40%"
+                                stroke="#0077b6"
+                                strokeWidth="1"
+                                opacity="0.3"
+                            />
+                            <line
+                                x1="70%"
+                                y1="30%"
+                                x2="90%"
+                                y2="60%"
+                                stroke="#0077b6"
+                                strokeWidth="1"
+                                opacity="0.3"
+                            />
+                            <line
+                                x1="20%"
+                                y1="70%"
+                                x2="40%"
+                                y2="90%"
+                                stroke="#0077b6"
+                                strokeWidth="1"
+                                opacity="0.3"
+                            />
+                            <line
+                                x1="60%"
+                                y1="10%"
+                                x2="80%"
+                                y2="30%"
+                                stroke="#0077b6"
+                                strokeWidth="1"
+                                opacity="0.3"
+                            />
+                        </g>
+
+                        {/* Data points */}
+                        <g>
+                            <circle
+                                cx="10%"
+                                cy="20%"
+                                r="3"
+                                fill="#0077b6"
+                                opacity="0.4"
+                                className="animate-ping"
+                            />
+                            <circle
+                                cx="30%"
+                                cy="40%"
+                                r="2"
+                                fill="#0077b6"
+                                opacity="0.4"
+                                className="animate-ping"
+                                style={{ animationDelay: "1s" }}
+                            />
+                            <circle
+                                cx="70%"
+                                cy="30%"
+                                r="2.5"
+                                fill="#0077b6"
+                                opacity="0.4"
+                                className="animate-ping"
+                                style={{ animationDelay: "2s" }}
+                            />
+                            <circle
+                                cx="90%"
+                                cy="60%"
+                                r="3"
+                                fill="#0077b6"
+                                opacity="0.4"
+                                className="animate-ping"
+                                style={{ animationDelay: "0.5s" }}
+                            />
+                            <circle
+                                cx="20%"
+                                cy="70%"
+                                r="2"
+                                fill="#0077b6"
+                                opacity="0.4"
+                                className="animate-ping"
+                                style={{ animationDelay: "1.5s" }}
+                            />
+                            <circle
+                                cx="40%"
+                                cy="90%"
+                                r="2.5"
+                                fill="#0077b6"
+                                opacity="0.4"
+                                className="animate-ping"
+                                style={{ animationDelay: "2.5s" }}
+                            />
+                        </g>
+                    </svg>
+                </div>
+
+                {/* Floating Binary Code */}
+                <div className="absolute top-10 right-10 opacity-10 text-sm font-mono text-blue-600 animate-pulse">
+                    1010110
+                    <br />
+                    0110101
+                    <br />
+                    1001011
+                    <br />
+                    0101110
+                </div>
+
+                <div
+                    className="absolute bottom-20 left-10 opacity-10 text-sm font-mono text-blue-600 animate-pulse"
+                    style={{ animationDelay: "1s" }}
+                >
+                    ML.fit()
+                    <br />
+                    predict()
+                    <br />
+                    analyze()
+                    <br />
+                    visualize()
+                </div>
+            </div>
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center">
                     {/* Profile Image Placeholder */}
                     <div className="mb-8">
