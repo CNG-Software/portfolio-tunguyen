@@ -1,0 +1,42 @@
+{
+    "title": "Get in Touch",
+    "description": "I'm currently seeking opportunities in data science, machine learning, and analytics. Whether you're looking for a team member, have a project in mind, or just want to connect with a fellow data enthusiast, I'd love to hear from you.",
+    "contactInfo": [
+        {
+            "title": "Email",
+            "value": "camtu.hnguyen2067@gmail.com",
+            "link": "mailto:camtu.hnguyen2067@gmail.com",
+            "icon": "email"
+        },
+        {
+            "title": "LinkedIn",
+            "value": "www.linkedin.com/in/tu-hoang-cam-nguyen-644885305/",
+            "link": "https://www.linkedin.com/in/tu-hoang-cam-nguyen-644885305/",
+            "icon": "linkedin"
+        },
+        {
+            "title": "GitHub",
+            "value": "github.com/tuhoangcamnguyen",
+            "link": "https://github.com/tuhoangcamnguyen",
+            "icon": "github"
+        },
+        {
+            "title": "Location",
+            "value": "San Francisco, CA",
+            "link": "",
+            "icon": "location"
+        }
+    ],
+    "availability": {
+        "title": "Available for:",
+        "items": [
+            "Full-time data science positions",
+            "Part-time consulting projects",
+            "Machine learning collaborations",
+            "Data analysis freelance work"
+        ]
+    },
+    "messages": {
+        "successAlert": "Thank you for your message! I'll get back to you soon."
+    }
+}

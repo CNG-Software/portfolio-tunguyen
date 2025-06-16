@@ -1,0 +1,95 @@
+{
+    "skillCategories": [
+        {
+            "title": "Programming Languages",
+            "icon": "💻",
+            "skills": ["Python", "R", "SQL", "JavaScript", "Java", "Scala"],
+            "color": "blue"
+        },
+        {
+            "title": "Machine Learning",
+            "icon": "🤖",
+            "skills": [
+                "Scikit-learn",
+                "TensorFlow",
+                "PyTorch",
+                "Keras",
+                "XGBoost",
+                "LightGBM"
+            ],
+            "color": "green"
+        },
+        {
+            "title": "Data Visualization",
+            "icon": "📊",
+            "skills": [
+                "Matplotlib",
+                "Seaborn",
+                "Plotly",
+                "Tableau",
+                "Power BI",
+                "D3.js"
+            ],
+            "color": "purple"
+        },
+        {
+            "title": "Database & Tools",
+            "icon": "🗄️",
+            "skills": [
+                "PostgreSQL",
+                "MySQL",
+                "MongoDB",
+                "Apache Spark",
+                "Hadoop",
+                "Docker"
+            ],
+            "color": "orange"
+        },
+        {
+            "title": "Cloud Platforms",
+            "icon": "☁️",
+            "skills": [
+                "AWS",
+                "Google Cloud",
+                "Azure",
+                "Databricks",
+                "Snowflake",
+                "Heroku"
+            ],
+            "color": "indigo"
+        },
+        {
+            "title": "Statistical Analysis",
+            "icon": "📈",
+            "skills": [
+                "Hypothesis Testing",
+                "A/B Testing",
+                "Regression",
+                "Time Series",
+                "Bayesian Statistics",
+                "ANOVA"
+            ],
+            "color": "pink"
+        }
+    ],
+    "proficiencyLevels": [
+        {
+            "level": "Advanced",
+            "description": "Python, SQL, Machine Learning, Statistical Analysis",
+            "color": "green",
+            "icon": "check-circle"
+        },
+        {
+            "level": "Intermediate",
+            "description": "R, Deep Learning, Cloud Platforms, Big Data Tools",
+            "color": "blue",
+            "icon": "lightning"
+        },
+        {
+            "level": "Learning",
+            "description": "Scala, MLOps, Advanced Deep Learning Architectures",
+            "color": "yellow",
+            "icon": "academic-cap"
+        }
+    ]
+}

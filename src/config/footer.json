@@ -1,0 +1,33 @@
+{
+    "brand": {
+        "name": "Tu Nguyen",
+        "description": "Aspiring Data Scientist passionate about transforming data into actionable insights and building machine learning solutions that make a real-world impact."
+    },
+    "quickLinks": {
+        "title": "Quick Links",
+        "items": ["About", "Skills", "Projects", "Experience", "Contact"]
+    },
+    "social": {
+        "title": "Connect",
+        "links": [
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/tu-hoang-cam-nguyen-644885305/",
+                "icon": "linkedin"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tuhoangcamnguyen",
+                "icon": "github"
+            },
+            {
+                "name": "Email",
+                "url": "mailto:camtu.hnguyen2067@gmail.com",
+                "icon": "email"
+            }
+        ]
+    },
+    "copyright": {
+        "text": "All rights reserved. Built with Next.js and Tailwind CSS."
+    }
+}

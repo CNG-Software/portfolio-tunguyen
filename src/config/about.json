@@ -1,0 +1,33 @@
+{
+    "journey": [
+        "I discovered my passion for data science during my undergraduate studies, where I was fascinated by how data could tell compelling stories and drive meaningful decisions. This curiosity led me to dive deep into statistics, programming, and machine learning.",
+        "Throughout my academic journey, I've worked on various projects ranging from predictive modeling to data visualization, always with the goal of extracting actionable insights from complex datasets. I believe that the best data science happens at the intersection of technical skills and domain expertise.",
+        "When I'm not analyzing data or building models, you can find me exploring new datasets, reading about the latest developments in AI, or contributing to open-source projects. I'm always eager to learn and apply new techniques to solve real-world problems."
+    ],
+    "highlights": [
+        {
+            "title": "Problem Solver",
+            "description": "Passionate about using data to solve complex business problems and improve decision-making processes.",
+            "color": "blue",
+            "icon": "lightbulb"
+        },
+        {
+            "title": "Fast Learner",
+            "description": "Quick to adapt to new technologies and methodologies in the rapidly evolving field of data science.",
+            "color": "green",
+            "icon": "lightning"
+        },
+        {
+            "title": "Team Player",
+            "description": "Excellent communication skills and experience working in collaborative environments.",
+            "color": "purple",
+            "icon": "users"
+        },
+        {
+            "title": "Results-Drive",
+            "description": "Focused on delivering measurable outcomes and creating value through data-driven insights.",
+            "color": "orange",
+            "icon": "chart"
+        }
+    ]
+}
