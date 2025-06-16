@@ -6,17 +6,18 @@
         "location": "Remote – Toronto, ON",
         "period": "April 2024 - February 2025",
         "description": [
-            "Analyzed over 500,000 rows of cross-platform data using Python, SQL, and R from web logs.",
-            "Produced recurring bi-weekly performance reports in Excel using PivotTables and VLOOKUP across platforms.",
-            "Built and maintained interactive dashboards in Power BI and Tableau.",
-            "Collaborated with cross-functional stakeholders in marketing, product, and business development to define KPIs."
+            "Analyzed over 500,000 rows of cross-platform data using Python, SQL, and R from web logs",
+            "Produced recurring bi-weekly performance reports in Excel using PivotTables and VLOOKUP across platforms",
+            "Built and maintained interactive dashboards in Power BI and Tableau",
+            "Collaborated with cross-functional stakeholders in marketing, product, and business development to define KPIs"
         ],
         "technologies": [
             "Python",
-            "Scikit-learn",
-            "Tableau",
             "SQL",
-            "A/B Testing"
+            "R",
+            "Excel",
+            "Power BI",
+            "Tableau"
         ]
     },
     {
@@ -31,11 +32,11 @@
             "Design & Analysis of Project"
         ],
         "technologies": [
-            "R",
-            "Python",
-            "Statistical Analysis",
-            "Machine Learning",
-            "Healthcare Data"
+            "Data Structures",
+            "Machine Learning Principles",
+            "Statistical Inference for Data Science",
+            "Design & Analysis of Project",
+            "Regression Method"
         ]
     }
 ]

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "IBM Z Xplore",
+        "description": "Concepts - IBM Systems Intermediate (IBM)",
+        "icon": "star",
+        "color": "yellow"
+    },
+    {
+        "title": "AWS Educate",
+        "description": "Introduction to Cloud 101 (AWS)",
+        "icon": "book",
+        "color": "red"
+    },
+    {
+        "title": "IBM Data Analyst",
+        "description": "Professional Certificate (IBM)",
+        "icon": "users",
+        "color": "green"
+    }
+]
