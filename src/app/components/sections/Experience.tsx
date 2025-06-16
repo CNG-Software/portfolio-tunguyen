@@ -80,7 +80,7 @@ export const Experience: React.FC = () => {
         const colorClasses = {
             yellow: "bg-yellow-100 text-yellow-600",
             red: "bg-red-100 text-red-600",
-            green: "bg-green-100 text-green-600"
+            green: "bg-green-100 text-green-600",
         };
 
         const iconSvg = {
@@ -107,11 +107,15 @@ export const Experience: React.FC = () => {
                     strokeWidth={2}
                     d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                 />
-            )
+            ),
         };
 
         return (
-            <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${colorClasses[color as keyof typeof colorClasses]}`}>
+            <div
+                className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
+                    colorClasses[color as keyof typeof colorClasses]
+                }`}
+            >
                 <svg
                     className="w-8 h-8"
                     fill="none"
@@ -140,8 +144,6 @@ export const Experience: React.FC = () => {
 
                         {experiences.map((exp, index) => (
                             <div key={index} className="relative mb-8 md:ml-16">
-                                
-
                                 <Card
                                     hover
                                     className="border-l-4 border-l-[#0077b6]"
@@ -152,7 +154,10 @@ export const Experience: React.FC = () => {
                                                 <h3 className="text-xl font-semibold text-gray-900 mb-1">
                                                     {exp.title}
                                                 </h3>
-                                                <h4 className="text-lg font-medium mb-1" style={{ color: '#0077b6' }}>
+                                                <h4
+                                                    className="text-lg font-medium mb-1"
+                                                    style={{ color: "#0077b6" }}
+                                                >
                                                     {exp.organization}
                                                 </h4>
                                                 <p className="text-gray-600 text-sm mb-2">
@@ -160,7 +165,6 @@ export const Experience: React.FC = () => {
                                                     {exp.period}
                                                 </p>
                                             </div>
-                                            
                                         </div>
 
                                         <ul className="space-y-2 mb-4">
@@ -170,7 +174,13 @@ export const Experience: React.FC = () => {
                                                         key={itemIndex}
                                                         className="text-gray-700 text-sm flex items-start"
                                                     >
-                                                        <span className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{ backgroundColor: '#0077b6' }}></span>
+                                                        <span
+                                                            className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                                                            style={{
+                                                                backgroundColor:
+                                                                    "#0077b6",
+                                                            }}
+                                                        ></span>
                                                         {item}
                                                     </li>
                                                 )
@@ -195,17 +205,23 @@ export const Experience: React.FC = () => {
                             </div>
                         ))}
                     </div>
-                </div>         
+                </div>
 
                 <div className="mt-16 text-center">
                     <h3 className="text-2xl font-semibold text-gray-900 mb-8">
-                        {sectionsConfig.experience.additionalQualificationsTitle}
+                        {
+                            sectionsConfig.experience
+                                .additionalQualificationsTitle
+                        }
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                         {qualifications.map((qualification, index) => (
                             <Card key={index} className="text-center">
                                 <CardContent className="p-6">
-                                    {getQualificationIcon(qualification.icon, qualification.color)}
+                                    {getQualificationIcon(
+                                        qualification.icon,
+                                        qualification.color
+                                    )}
                                     <h4 className="font-semibold text-gray-900 mb-2">
                                         {qualification.title}
                                     </h4>
@@ -217,8 +233,6 @@ export const Experience: React.FC = () => {
                         ))}
                     </div>
                 </div>
-
-
             </div>
         </section>
     );

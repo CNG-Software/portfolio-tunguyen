@@ -25,7 +25,6 @@ export const Hero: React.FC = () => {
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    
                     {/* Profile Image Placeholder */}
                     <div className="mb-8">
                         <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-xl">
@@ -36,7 +35,7 @@ export const Hero: React.FC = () => {
                     {/* Introduction */}
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                         Hi, I'm{" "}
-                        <span style={{ color: "#0077b6"}}>
+                        <span style={{ color: "#0077b6" }}>
                             {heroConfig.name}
                         </span>
                     </h1>
@@ -62,7 +61,10 @@ export const Hero: React.FC = () => {
                                 }
                                 onClick={() => handleButtonClick(button.target)}
                                 className="w-full sm:w-auto"
-                                style={{ backgroundColor: "#023e8a", borderColor: "#023e8a" }}
+                                style={{
+                                    backgroundColor: "#023e8a",
+                                    borderColor: "#023e8a",
+                                }}
                             >
                                 {button.text}
                             </Button>

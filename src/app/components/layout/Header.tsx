@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
                         <button
                             onClick={() => scrollToSection("#home")}
                             className="text-2xl font-bold"
-                            style={{ color: "#0077b6"}}
+                            style={{ color: "#0077b6" }}
                         >
                             {navigationConfig.logo}
                         </button>
