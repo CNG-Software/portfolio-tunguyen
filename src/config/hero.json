@@ -5,14 +5,14 @@
     "description": "Passionate about transforming raw data into actionable insights and building intelligent systems that solve real-world problems. Currently pursuing opportunities to apply my skills in data science and statistical analysis.",
     "buttons": [
         {
-            "text": "View My Projects",
+            "text": "Learn More",
             "type": "primary",
-            "target": "#projects"
+            "target": "#about"
         },
         {
-            "text": "Get In Touch",
-            "type": "outline",
-            "target": "#contact"
+            "text": "View Resume",
+            "type": "primary",
+            "target": "/resume.pdf"
         }
     ]
 }

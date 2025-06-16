@@ -5,10 +5,16 @@ import { Button } from "../ui/Button";
 import heroConfig from "../../../config/hero.json";
 
 export const Hero: React.FC = () => {
-    const scrollToSection = (sectionId: string) => {
-        const element = document.querySelector(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
+    const handleButtonClick = (target: string) => {
+        if (target.startsWith("#")) {
+            // Internal scroll to section
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        } else {
+            // External link
+            window.open(target, "_blank", "noopener,noreferrer");
         }
     };
 
@@ -53,7 +59,7 @@ export const Hero: React.FC = () => {
                                         ? "outline"
                                         : undefined
                                 }
-                                onClick={() => scrollToSection(button.target)}
+                                onClick={() => handleButtonClick(button.target)}
                                 className="w-full sm:w-auto"
                             >
                                 {button.text}
@@ -66,7 +72,7 @@ export const Hero: React.FC = () => {
             {/* Scroll indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <button
-                    onClick={() => scrollToSection("#about")}
+                    onClick={() => handleButtonClick("#about")}
                     className="text-gray-400 hover:text-gray-600 transition-colors"
                     aria-label="Scroll to about section"
                 >

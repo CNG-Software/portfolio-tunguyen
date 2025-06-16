@@ -9,14 +9,14 @@ export const Skills: React.FC = () => {
 
     const getColorClasses = (color: string) => {
         const colorMap = {
-            blue: "bg-blue-50 border-blue-200",
-            green: "bg-green-50 border-green-200",
-            purple: "bg-purple-50 border-purple-200",
-            orange: "bg-orange-50 border-orange-200",
-            indigo: "bg-indigo-50 border-indigo-200",
-            pink: "bg-pink-50 border-pink-200",
+            blue: "bg-blue-50 border-[#00b4d8]",
+            green: "bg-green-50 border-[#00b4d8]",
+            purple: "bg-purple-50 border-[#00b4d8]",
+            orange: "bg-orange-50 border-[#00b4d8]",
+            indigo: "bg-indigo-50 border-[#00b4d8]",
+            pink: "bg-pink-50 border-[#00b4d8]",
         };
-        return colorMap[color as keyof typeof colorMap] || colorMap.blue;
+        return colorMap[color as keyof typeof colorMap] || "bg-blue-50 border-[#00b4d8]";
     };
 
     return (
@@ -42,9 +42,6 @@ export const Skills: React.FC = () => {
                         >
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-3">
-                                    <span className="text-2xl">
-                                        {category.icon}
-                                    </span>
                                     <span className="text-lg">
                                         {category.title}
                                     </span>
@@ -58,7 +55,11 @@ export const Skills: React.FC = () => {
                                                 key={skillIndex}
                                                 variant="secondary"
                                                 size="sm"
-                                                className="bg-white/80 hover:bg-white transition-colors"
+                                                className={`bg-white/80 hover:bg-white transition-colors border ${
+                                                    skillIndex % 2 === 0 
+                                                        ? 'border-[#caf0f8]' 
+                                                        : 'border-[#ade8f4]'
+                                                }`}
                                             >
                                                 {skill}
                                             </Badge>

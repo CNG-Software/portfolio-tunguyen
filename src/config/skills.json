@@ -1,73 +1,63 @@
 {
     "skillCategories": [
         {
-            "title": "Programming Languages",
-            "icon": "💻",
-            "skills": ["Python", "R", "SQL", "JavaScript", "Java", "Scala"],
+            "title": "Programming & Analysis",
+            "skills": ["Python", "R", "SQL", "Jupyter Notebook"],
             "color": "blue"
         },
         {
-            "title": "Machine Learning",
-            "icon": "🤖",
+            "title": "Statistical Methods",
             "skills": [
-                "Scikit-learn",
-                "TensorFlow",
-                "PyTorch",
-                "Keras",
-                "XGBoost",
-                "LightGBM"
+                "A/B Testing",
+                "Hypothesis Testing",
+                "Regression",
+                "Predictive Modeling",
+                "Time Series Analysis",
+                "Statistical Inference"
             ],
             "color": "green"
         },
         {
             "title": "Data Visualization",
-            "icon": "📊",
             "skills": [
-                "Matplotlib",
-                "Seaborn",
-                "Plotly",
                 "Tableau",
                 "Power BI",
-                "D3.js"
+                "Looker Studio",
+                "Excel",
+                "PowerPoint",
+                "IBM Cognos Analytics",
+                "AWS QuickSight"
             ],
             "color": "purple"
         },
         {
-            "title": "Database & Tools",
-            "icon": "🗄️",
+            "title": "Database & Data Engineering",
             "skills": [
+                "Snowflake",
                 "PostgreSQL",
                 "MySQL",
-                "MongoDB",
-                "Apache Spark",
-                "Hadoop",
-                "Docker"
+                "DBT",
+                "Data Modeling",
+                "ETL Development"
             ],
             "color": "orange"
         },
         {
-            "title": "Cloud Platforms",
-            "icon": "☁️",
-            "skills": [
-                "AWS",
-                "Google Cloud",
-                "Azure",
-                "Databricks",
-                "Snowflake",
-                "Heroku"
-            ],
+            "title": "Big Data & Cloud Platforms",
+            "skills": ["Google BigQuery", "AWS (S3, EC2, RDS)", "Spark"],
             "color": "indigo"
         },
         {
-            "title": "Statistical Analysis",
-            "icon": "📈",
+            "title": "Machine Learning & Deep Learning",
             "skills": [
-                "Hypothesis Testing",
-                "A/B Testing",
-                "Regression",
-                "Time Series",
-                "Bayesian Statistics",
-                "ANOVA"
+                "Scikit-learn",
+                "PyTorch",
+                "Tensorflow",
+                "Transformer",
+                "NLP",
+                "SVM",
+                "Computer Vision",
+                "Principal Component Analysis (PCA)"
             ],
             "color": "pink"
         }

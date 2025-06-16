@@ -11,9 +11,7 @@ export const About: React.FC = () => {
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                         {sectionsConfig.about.title}
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        {sectionsConfig.about.subtitle}
-                    </p>
+                    
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

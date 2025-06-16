@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Tu Nguyen - Data Scientist Portfolio",
         description:
-            "Aspiring Data Scientist passionate about machine learning and data analytics",
+            "Aspiring Data Scientist passionate about machine learning and statistical analysis",
         type: "website",
     },
 };
