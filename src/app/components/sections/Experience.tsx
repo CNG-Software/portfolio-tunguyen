@@ -144,7 +144,7 @@ export const Experience: React.FC = () => {
 
                                 <Card
                                     hover
-                                    className="border-l-4 border-l-blue-500"
+                                    className="border-l-4 border-l-[#0077b6]"
                                 >
                                     <CardContent className="p-6">
                                         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -152,7 +152,7 @@ export const Experience: React.FC = () => {
                                                 <h3 className="text-xl font-semibold text-gray-900 mb-1">
                                                     {exp.title}
                                                 </h3>
-                                                <h4 className="text-lg text-blue-600 font-medium mb-1">
+                                                <h4 className="text-lg font-medium mb-1" style={{ color: '#0077b6' }}>
                                                     {exp.organization}
                                                 </h4>
                                                 <p className="text-gray-600 text-sm mb-2">
@@ -170,7 +170,7 @@ export const Experience: React.FC = () => {
                                                         key={itemIndex}
                                                         className="text-gray-700 text-sm flex items-start"
                                                     >
-                                                        <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                                        <span className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{ backgroundColor: '#0077b6' }}></span>
                                                         {item}
                                                     </li>
                                                 )
