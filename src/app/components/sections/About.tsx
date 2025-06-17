@@ -9,7 +9,7 @@ export const About: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        {sectionsConfig.about.title}
+                        About <span style={{ color: '#0077B6' }}>Me</span>
                     </h2>
                 </div>
 
@@ -33,6 +33,16 @@ export const About: React.FC = () => {
                         </h3>
 
                         {aboutConfig.highlights.map((highlight, index) => {
+                            const getBorderClass = (color: string) => {
+                                const colorMap: { [key: string]: string } = {
+                                    blue: 'border-l-[#0077b6]',
+                                    green: 'border-l-[#10b981]',
+                                    purple: 'border-l-[#8b5cf6]',
+                                    orange: 'border-l-[#f59e0b]'
+                                };
+                                return colorMap[color] || 'border-l-[#0077b6]';
+                            };
+
                             const getIconSvg = (icon: string) => {
                                 switch (icon) {
                                     case "lightbulb":
@@ -87,7 +97,7 @@ export const About: React.FC = () => {
                                 <Card
                                     key={index}
                                     hover
-                                    className={`border-l-4 border-l-${highlight.color}-500`}
+                                    className={`border-l-4 ${getBorderClass(highlight.color)}`}
                                 >
                                     <CardContent>
                                         <div className="flex items-start space-x-4">

@@ -24,7 +24,7 @@ export const Projects: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        {sectionsConfig.projects.title}
+                        Featured <span style={{ color: '#0077B6' }}>Projects</span>
                     </h2>
                 </div>
 

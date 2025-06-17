@@ -9,16 +9,16 @@ export const Skills: React.FC = () => {
 
     const getColorClasses = (color: string) => {
         const colorMap = {
-            blue: "bg-blue-50 border-[#00b4d8]",
-            green: "bg-green-50 border-[#00b4d8]",
-            purple: "bg-purple-50 border-[#00b4d8]",
-            orange: "bg-orange-50 border-[#00b4d8]",
-            indigo: "bg-indigo-50 border-[#00b4d8]",
-            pink: "bg-pink-50 border-[#00b4d8]",
+            blue: "bg-blue-50 border-blue-400",
+            green: "bg-green-50 border-green-400",
+            purple: "bg-purple-50 border-purple-400",
+            orange: "bg-orange-50 border-orange-400",
+            indigo: "bg-indigo-50 border-indigo-400",
+            pink: "bg-pink-50 border-pink-400",
         };
         return (
             colorMap[color as keyof typeof colorMap] ||
-            "bg-blue-50 border-[#00b4d8]"
+            "bg-blue-50 border-blue-400"
         );
     };
 
@@ -27,7 +27,7 @@ export const Skills: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        {sectionsConfig.skills.title}
+                        Technical <span style={{ color: '#0077B6' }}>Skills</span>
                     </h2>
                 </div>
 

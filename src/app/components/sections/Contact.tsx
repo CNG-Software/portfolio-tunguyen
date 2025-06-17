@@ -82,24 +82,16 @@ export const Contact: React.FC = () => {
     return (
         <section id="contact" className="py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                {/* <div className="text-center mb-16">
+                <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        Let's Connect
+                        {contactConfig.title}
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        I'm always open to discussing new opportunities,
-                        collaborations, or just having a chat about data
-                        science. Feel free to reach out!
-                    </p>
-                </div> */}
+                </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
-                    {/* Contact Information */}
+        
                     <div className="space-y-8">
                         <div>
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                                {contactConfig.title}
-                            </h3>
                             <p className="text-gray-600 mb-8 leading-relaxed">
                                 {contactConfig.description}
                             </p>
@@ -145,11 +137,11 @@ export const Contact: React.FC = () => {
                                                 }
                                                 className="text-blue-600 hover:text-blue-700 transition-colors"
                                             >
-                                                {info.value}
+                                                {info.link.startsWith('mailto:') ? info.link.replace('mailto:', '') : info.link}
                                             </a>
                                         ) : (
                                             <span className="text-gray-600">
-                                                {info.value}
+                                                {info.title}
                                             </span>
                                         )}
                                     </div>

@@ -3,10 +3,6 @@
         "name": "Tu Nguyen",
         "description": "Aspiring Data Scientist passionate about transforming data into actionable insights and building machine learning solutions that make a real-world impact."
     },
-    "quickLinks": {
-        "title": "Quick Links",
-        "items": ["About", "Skills", "Projects", "Experience", "Contact"]
-    },
     "social": {
         "title": "Connect",
         "links": [
@@ -28,6 +24,6 @@
         ]
     },
     "copyright": {
-        "text": "All rights reserved. Built with Next.js and Tailwind CSS."
+        "text": "All rights reserved."
     }
 }
