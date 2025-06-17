@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="text-white" style={{ backgroundColor: "#023e8a" }}>
+        <footer id="contact" className="text-white" style={{ backgroundColor: "#023e8a" }}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="mt-1 pt-2 text-center">
                     
