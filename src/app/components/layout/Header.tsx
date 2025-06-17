@@ -36,7 +36,6 @@ export const Header: React.FC = () => {
         >
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    
                     <div className="flex-shrink-0">
                         <button
                             onClick={() => scrollToSection("#home")}
@@ -47,10 +46,8 @@ export const Header: React.FC = () => {
                         </button>
                     </div>
 
-                    
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-center space-x-8">
-                            
                             <div className="flex items-baseline space-x-8">
                                 {navigationConfig.navItems.map((item) => (
                                     <button
@@ -65,7 +62,6 @@ export const Header: React.FC = () => {
                                 ))}
                             </div>
 
-                            
                             <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-gray-200">
                                 {footerConfig.social.links.map(
                                     (link, index) => (
@@ -105,7 +101,6 @@ export const Header: React.FC = () => {
                         </div>
                     </div>
 
-                    
                     <div className="md:hidden">
                         <button
                             onClick={() =>
@@ -147,7 +142,6 @@ export const Header: React.FC = () => {
                     </div>
                 </div>
 
-                
                 {isMobileMenuOpen && (
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">

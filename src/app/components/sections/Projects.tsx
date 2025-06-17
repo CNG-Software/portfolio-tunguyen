@@ -4,7 +4,6 @@ import { Button } from "../ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/Card";
 import projectsConfig from "../../../config/projects.json";
 
-
 export const Projects: React.FC = () => {
     const projects = projectsConfig;
 

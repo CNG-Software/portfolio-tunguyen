@@ -90,7 +90,10 @@ export const Hero: React.FC = () => {
                             {
                                 left: `${particle.x}%`,
                                 top: `${particle.y}%`,
-                                fontSize: `${Math.max(particle.size * 0.6, 12)}px`,
+                                fontSize: `${Math.max(
+                                    particle.size * 0.6,
+                                    12
+                                )}px`,
                                 animationDelay: `${particle.animationDelay}s`,
                                 filter: "drop-shadow(0 0 4px rgba(0, 119, 182, 0.3))",
                             } as React.CSSProperties

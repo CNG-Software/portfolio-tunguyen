@@ -143,7 +143,10 @@ export const Experience: React.FC = () => {
                         <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gray-300 hidden sm:block"></div>
 
                         {experiences.map((exp, index) => (
-                            <div key={index} className="relative mb-6 sm:mb-8 sm:ml-16">
+                            <div
+                                key={index}
+                                className="relative mb-6 sm:mb-8 sm:ml-16"
+                            >
                                 <Card
                                     hover
                                     className="border-l-4 border-l-[#0077b6] p-4 sm:p-6"
@@ -211,7 +214,10 @@ export const Experience: React.FC = () => {
                 <div className="mt-12 sm:mt-20">
                     <div className="text-center mb-8 sm:mb-12">
                         <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-                            {sectionsConfig.experience.additionalQualificationsTitle}
+                            {
+                                sectionsConfig.experience
+                                    .additionalQualificationsTitle
+                            }
                         </h3>
                     </div>
 
@@ -223,7 +229,10 @@ export const Experience: React.FC = () => {
                                 className="text-center p-4 sm:p-6"
                             >
                                 <CardContent className="p-0">
-                                    {getQualificationIcon(qual.icon, qual.color)}
+                                    {getQualificationIcon(
+                                        qual.icon,
+                                        qual.color
+                                    )}
                                     <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
                                         {qual.title}
                                     </h4>
