@@ -55,13 +55,13 @@ export const Header: React.FC = () => {
                             {/* Navigation Items */}
                             <div className="flex items-baseline space-x-8">
                                 {navigationConfig.navItems.map((item) => (
-                                    <button
-                                        key={item.name}
-                                        onClick={() => scrollToSection(item.href)}
-                                        className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
-                                    >
-                                        {item.name}
-                                    </button>
+                                                                    <button
+                                    key={item.name}
+                                    onClick={() => scrollToSection(item.href)}
+                                    className="text-gray-700 hover:text-[#0077b6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-[3px] border-transparent hover:border-[#0077b6]"
+                                >
+                                    {item.name}
+                                </button>
                                 ))}
                             </div>
                             
@@ -81,7 +81,7 @@ export const Header: React.FC = () => {
                                                 ? "noopener noreferrer"
                                                 : undefined
                                         }
-                                        className="w-8 h-8 rounded-full flex items-center justify-center text-gray-600 hover:text-blue-600 hover:bg-gray-100 transition-all duration-200"
+                                        className="w-8 h-8 rounded-full flex items-center justify-center text-gray-600 hover:text-[#0077b6] hover:bg-gray-100 transition-all duration-200"
                                         aria-label={link.name}
                                     >
                                         <svg
@@ -153,7 +153,7 @@ export const Header: React.FC = () => {
                                 <button
                                     key={item.name}
                                     onClick={() => scrollToSection(item.href)}
-                                    className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium w-full text-left transition-colors"
+                                    className="text-gray-700 hover:text-[#0077b6] block px-3 py-2 text-base font-medium w-full text-left transition-colors"
                                 >
                                     {item.name}
                                 </button>
