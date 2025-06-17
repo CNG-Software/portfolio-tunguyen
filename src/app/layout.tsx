@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Tu Nguyen - Data Scientist Portfolio",
+    title: "Tu Nguyen",
     description:
         "Aspiring Data Scientist passionate about machine learning, statistical analysis, and data-driven insights. Explore my projects and skills.",
     keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: "Tu Nguyen" }],
     openGraph: {
-        title: "Tu Nguyen - Data Scientist Portfolio",
+        title: "Tu Nguyen",
         description:
             "Aspiring Data Scientist passionate about machine learning and statistical analysis",
         type: "website",

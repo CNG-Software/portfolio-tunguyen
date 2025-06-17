@@ -27,7 +27,7 @@ export const About: React.FC = () => {
 
                     <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
                         <h3 className="text-xl sm:text-2xl font-semibold text-gray-900">
-                            Key Highlights
+                            Soft Skills
                         </h3>
 
                         {aboutConfig.highlights.map((highlight, index) => {
