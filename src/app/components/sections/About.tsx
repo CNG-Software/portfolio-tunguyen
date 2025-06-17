@@ -43,6 +43,16 @@ export const About: React.FC = () => {
                                 return colorMap[color] || 'border-l-[#0077b6]';
                             };
 
+                            const getIconColorClasses = (color: string) => {
+                                const colorMap: { [key: string]: { bg: string; text: string } } = {
+                                    blue: { bg: 'bg-blue-100', text: 'text-blue-600' },
+                                    green: { bg: 'bg-green-100', text: 'text-green-600' },
+                                    purple: { bg: 'bg-purple-100', text: 'text-purple-600' },
+                                    orange: { bg: 'bg-orange-100', text: 'text-orange-600' }
+                                };
+                                return colorMap[color] || { bg: 'bg-blue-100', text: 'text-blue-600' };
+                            };
+
                             const getIconSvg = (icon: string) => {
                                 switch (icon) {
                                     case "lightbulb":
@@ -93,6 +103,8 @@ export const About: React.FC = () => {
                                 }
                             };
 
+                            const iconColors = getIconColorClasses(highlight.color);
+                            
                             return (
                                 <Card
                                     key={index}
@@ -102,10 +114,10 @@ export const About: React.FC = () => {
                                     <CardContent>
                                         <div className="flex items-start space-x-4">
                                             <div
-                                                className={`w-8 h-8 bg-${highlight.color}-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1`}
+                                                className={`w-8 h-8 ${iconColors.bg} rounded-full flex items-center justify-center flex-shrink-0 mt-1`}
                                             >
                                                 <svg
-                                                    className={`w-4 h-4 text-${highlight.color}-600`}
+                                                    className={`w-4 h-4 ${iconColors.text}`}
                                                     fill="none"
                                                     stroke="currentColor"
                                                     viewBox="0 0 24 24"
