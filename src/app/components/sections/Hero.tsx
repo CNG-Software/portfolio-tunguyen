@@ -77,20 +77,20 @@ export const Hero: React.FC = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center bg-[#caf0f8] pt-20 relative overflow-hidden"
+            className="min-h-screen flex items-center justify-center bg-[#caf0f8] pt-16 sm:pt-20 relative overflow-hidden"
         >
             <div className="absolute inset-0 pointer-events-none">
                 {particles.map((particle) => (
                     <div
                         key={particle.id}
-                        className={`absolute text-blue-300 opacity-40 select-none hover:opacity-60 transition-opacity duration-300 animate-float-${
+                        className={`absolute text-blue-300 opacity-20 sm:opacity-40 select-none hover:opacity-60 transition-opacity duration-300 animate-float-${
                             particle.id % 4
-                        }`}
+                        } hidden sm:block`}
                         style={
                             {
                                 left: `${particle.x}%`,
                                 top: `${particle.y}%`,
-                                fontSize: `${particle.size}px`,
+                                fontSize: `${Math.max(particle.size * 0.6, 12)}px`,
                                 animationDelay: `${particle.animationDelay}s`,
                                 filter: "drop-shadow(0 0 4px rgba(0, 119, 182, 0.3))",
                             } as React.CSSProperties
@@ -255,9 +255,9 @@ export const Hero: React.FC = () => {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center">
-                    <div className="mb-8">
+                    <div className="mb-6 sm:mb-8">
                         {heroConfig.avatar ? (
-                            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-xl border-4 border-white">
+                            <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full overflow-hidden shadow-xl border-4 border-white">
                                 <img
                                     src={heroConfig.avatar}
                                     alt={`${heroConfig.name} profile picture`}
@@ -265,28 +265,28 @@ export const Hero: React.FC = () => {
                                 />
                             </div>
                         ) : (
-                            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-xl">
+                            <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-2xl sm:text-4xl font-bold shadow-xl">
                                 {heroConfig.initials}
                             </div>
                         )}
                     </div>
 
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
                         Hi, I'm{" "}
                         <span style={{ color: "#0077b6" }}>
                             {heroConfig.name}
                         </span>
                     </h1>
 
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                         {heroConfig.title}
                     </h2>
 
-                    <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base sm:text-lg text-gray-700 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
                         {heroConfig.description}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
                         {heroConfig.buttons.map((button, index) => (
                             <Button
                                 key={index}
@@ -297,7 +297,7 @@ export const Hero: React.FC = () => {
                                         : undefined
                                 }
                                 onClick={() => handleButtonClick(button.target)}
-                                className="w-full sm:w-auto"
+                                className="w-full sm:w-auto min-w-[160px]"
                                 style={{
                                     backgroundColor: "#023e8a",
                                     borderColor: "#023e8a",
@@ -310,14 +310,14 @@ export const Hero: React.FC = () => {
                 </div>
             </div>
 
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <button
                     onClick={() => handleButtonClick("#about")}
-                    className="text-gray-400 hover:text-gray-600 transition-colors"
+                    className="text-gray-400 hover:text-gray-600 transition-colors p-2"
                     aria-label="Scroll to about section"
                 >
                     <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 sm:w-6 sm:h-6"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

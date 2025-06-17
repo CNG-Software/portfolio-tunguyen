@@ -20,24 +20,24 @@ export const Projects: React.FC = () => {
     };
 
     return (
-        <section id="projects" className="py-20 bg-white">
+        <section id="projects" className="py-12 sm:py-16 lg:py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-12 sm:mb-16">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                         Featured{" "}
                         <span style={{ color: "#0077B6" }}>Projects</span>
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                     {projects.map((project, index) => (
                         <Card
                             key={index}
                             hover
-                            className="h-full flex flex-col"
+                            className="h-full flex flex-col p-4 sm:p-6"
                         >
-                            <CardHeader>
-                                <div className="flex items-start justify-between mb-4">
+                            <CardHeader className="pb-3 sm:pb-4">
+                                <div className="flex items-start justify-between mb-3 sm:mb-4">
                                     <Badge
                                         variant={
                                             getCategoryColor(
@@ -45,20 +45,21 @@ export const Projects: React.FC = () => {
                                             ) as any
                                         }
                                         size="sm"
+                                        className="text-xs"
                                     >
                                         {project.category}
                                     </Badge>
                                 </div>
-                                <CardTitle className="text-xl mb-2">
+                                <CardTitle className="text-lg sm:text-xl mb-2">
                                     {project.title}
                                 </CardTitle>
                             </CardHeader>
-                            <CardContent className="flex-grow flex flex-col">
-                                <p className="text-gray-600 mb-4 leading-relaxed">
+                            <CardContent className="flex-grow flex flex-col p-0">
+                                <p className="text-gray-600 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base">
                                     {project.description}
                                 </p>
 
-                                <div className="mb-4">
+                                <div className="mb-3 sm:mb-4">
                                     <div className="flex flex-wrap gap-1">
                                         {project.technologies.map(
                                             (tech, techIndex) => (
@@ -66,6 +67,7 @@ export const Projects: React.FC = () => {
                                                     key={techIndex}
                                                     variant="secondary"
                                                     size="sm"
+                                                    className="text-xs"
                                                 >
                                                     {tech}
                                                 </Badge>
@@ -74,10 +76,10 @@ export const Projects: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <div className="mb-6">
-                                    <div className="flex items-center text-sm text-green-600 font-medium">
+                                <div className="mb-4 sm:mb-6">
+                                    <div className="flex items-center text-xs sm:text-sm text-green-600 font-medium">
                                         <svg
-                                            className="w-4 h-4 mr-1"
+                                            className="w-3 h-3 sm:w-4 sm:h-4 mr-1"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -98,10 +100,10 @@ export const Projects: React.FC = () => {
                                         variant="outline"
                                         size="sm"
                                         href={project.github}
-                                        className="w-full"
+                                        className="w-full text-sm"
                                     >
                                         <svg
-                                            className="w-4 h-4 mr-1"
+                                            className="w-3 h-3 sm:w-4 sm:h-4 mr-1"
                                             fill="currentColor"
                                             viewBox="0 0 24 24"
                                         >

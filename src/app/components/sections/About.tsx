@@ -5,28 +5,28 @@ import sectionsConfig from "../../../config/sections.json";
 
 export const About: React.FC = () => {
     return (
-        <section id="about" className="py-20 bg-white">
+        <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-12 sm:mb-16">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                         About <span style={{ color: "#0077B6" }}>Me</span>
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
+                    <div className="order-2 lg:order-1">
+                        <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
                             {sectionsConfig.about.journeyTitle}
                         </h3>
-                        <div className="space-y-4 text-gray-700 leading-relaxed">
+                        <div className="space-y-3 sm:space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
                             {aboutConfig.journey.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}
                         </div>
                     </div>
 
-                    <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold text-gray-900">
+                    <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
+                        <h3 className="text-xl sm:text-2xl font-semibold text-gray-900">
                             Key Highlights
                         </h3>
 

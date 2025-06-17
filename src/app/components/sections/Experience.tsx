@@ -129,10 +129,10 @@ export const Experience: React.FC = () => {
     };
 
     return (
-        <section id="experience" className="py-20 bg-gray-50">
+        <section id="experience" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-12 sm:mb-16">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                         Experience &{" "}
                         <span style={{ color: "#0077B6" }}>Education</span>
                     </h2>
@@ -140,42 +140,42 @@ export const Experience: React.FC = () => {
 
                 <div className="max-w-4xl mx-auto">
                     <div className="relative">
-                        <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300 hidden md:block"></div>
+                        <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gray-300 hidden sm:block"></div>
 
                         {experiences.map((exp, index) => (
-                            <div key={index} className="relative mb-8 md:ml-16">
+                            <div key={index} className="relative mb-6 sm:mb-8 sm:ml-16">
                                 <Card
                                     hover
-                                    className="border-l-4 border-l-[#0077b6]"
+                                    className="border-l-4 border-l-[#0077b6] p-4 sm:p-6"
                                 >
-                                    <CardContent className="p-6">
-                                        <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                    <CardContent className="p-0">
+                                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4">
                                             <div className="flex-grow">
-                                                <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                                                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1">
                                                     {exp.title}
                                                 </h3>
                                                 <h4
-                                                    className="text-lg font-medium mb-1"
+                                                    className="text-base sm:text-lg font-medium mb-1"
                                                     style={{ color: "#0077b6" }}
                                                 >
                                                     {exp.organization}
                                                 </h4>
-                                                <p className="text-gray-600 text-sm mb-2">
+                                                <p className="text-gray-600 text-xs sm:text-sm mb-2">
                                                     {exp.location} •{" "}
                                                     {exp.period}
                                                 </p>
                                             </div>
                                         </div>
 
-                                        <ul className="space-y-2 mb-4">
+                                        <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
                                             {exp.description.map(
                                                 (item, itemIndex) => (
                                                     <li
                                                         key={itemIndex}
-                                                        className="text-gray-700 text-sm flex items-start"
+                                                        className="text-gray-700 text-xs sm:text-sm flex items-start"
                                                     >
                                                         <span
-                                                            className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                                                            className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"
                                                             style={{
                                                                 backgroundColor:
                                                                     "#0077b6",
@@ -187,13 +187,14 @@ export const Experience: React.FC = () => {
                                             )}
                                         </ul>
 
-                                        <div className="flex flex-wrap gap-2">
+                                        <div className="flex flex-wrap gap-1 sm:gap-2">
                                             {exp.technologies.map(
                                                 (tech, techIndex) => (
                                                     <Badge
                                                         key={techIndex}
                                                         variant="secondary"
                                                         size="sm"
+                                                        className="text-xs"
                                                     >
                                                         {tech}
                                                     </Badge>
@@ -207,26 +208,27 @@ export const Experience: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="mt-16 text-center">
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-8">
-                        {
-                            sectionsConfig.experience
-                                .additionalQualificationsTitle
-                        }
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        {qualifications.map((qualification, index) => (
-                            <Card key={index} className="text-center">
-                                <CardContent className="p-6">
-                                    {getQualificationIcon(
-                                        qualification.icon,
-                                        qualification.color
-                                    )}
-                                    <h4 className="font-semibold text-gray-900 mb-2">
-                                        {qualification.title}
+                <div className="mt-12 sm:mt-20">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                            {sectionsConfig.experience.additionalQualificationsTitle}
+                        </h3>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                        {qualifications.map((qual, index) => (
+                            <Card
+                                key={index}
+                                hover
+                                className="text-center p-4 sm:p-6"
+                            >
+                                <CardContent className="p-0">
+                                    {getQualificationIcon(qual.icon, qual.color)}
+                                    <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
+                                        {qual.title}
                                     </h4>
-                                    <p className="text-gray-600 text-sm">
-                                        {qualification.description}
+                                    <p className="text-xs sm:text-sm text-gray-600">
+                                        {qual.description}
                                     </p>
                                 </CardContent>
                             </Card>

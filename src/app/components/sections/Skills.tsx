@@ -22,40 +22,40 @@ export const Skills: React.FC = () => {
     };
 
     return (
-        <section id="skills" className="py-20 bg-gray-50">
+        <section id="skills" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-12 sm:mb-16">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                         Technical{" "}
                         <span style={{ color: "#0077B6" }}>Skills</span>
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                     {skillCategories.map((category, index) => (
                         <Card
                             key={index}
                             hover
                             className={`border-2 ${getColorClasses(
                                 category.color
-                            )}`}
+                            )} p-4 sm:p-6`}
                         >
-                            <CardHeader>
+                            <CardHeader className="mb-3 sm:mb-4">
                                 <CardTitle className="flex items-center gap-3">
-                                    <span className="text-lg">
+                                    <span className="text-base sm:text-lg">
                                         {category.title}
                                     </span>
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <div className="flex flex-wrap gap-2">
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                                     {category.skills.map(
                                         (skill, skillIndex) => (
                                             <Badge
                                                 key={skillIndex}
                                                 variant="secondary"
                                                 size="sm"
-                                                className={`bg-white/80 hover:bg-white transition-colors border ${
+                                                className={`bg-white/80 hover:bg-white transition-colors border text-xs sm:text-sm ${
                                                     skillIndex % 2 === 0
                                                         ? "border-[#caf0f8]"
                                                         : "border-[#ade8f4]"

@@ -17,7 +17,7 @@ export const Card: React.FC<CardProps> = ({
 
     return (
         <div
-            className={`bg-white rounded-lg shadow-md p-6 ${hoverClasses} ${className}`}
+            className={`bg-white rounded-lg shadow-md p-3 sm:p-6 ${hoverClasses} ${className}`}
         >
             {children}
         </div>

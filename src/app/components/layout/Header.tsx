@@ -40,7 +40,7 @@ export const Header: React.FC = () => {
                     <div className="flex-shrink-0">
                         <button
                             onClick={() => scrollToSection("#home")}
-                            className="text-2xl font-bold"
+                            className="text-xl sm:text-2xl font-bold"
                             style={{ color: "#0077b6" }}
                         >
                             {navigationConfig.logo}
