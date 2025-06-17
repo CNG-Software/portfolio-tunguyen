@@ -79,9 +79,7 @@ export const Hero: React.FC = () => {
             id="home"
             className="min-h-screen flex items-center justify-center bg-[#caf0f8] pt-20 relative overflow-hidden"
         >
-            {/* Animated Background */}
             <div className="absolute inset-0 pointer-events-none">
-                {/* Floating Mathematical Symbols */}
                 {particles.map((particle) => (
                     <div
                         key={particle.id}
@@ -102,7 +100,6 @@ export const Hero: React.FC = () => {
                     </div>
                 ))}
 
-                {/* Animated Network Connections */}
                 <div className="absolute inset-0">
                     <svg className="w-full h-full opacity-8">
                         <defs>
@@ -122,7 +119,6 @@ export const Hero: React.FC = () => {
                         </defs>
                         <rect width="100%" height="100%" fill="url(#grid)" />
 
-                        {/* Animated connecting lines */}
                         <g className="animate-pulse">
                             <line
                                 x1="10%"
@@ -180,7 +176,6 @@ export const Hero: React.FC = () => {
                             />
                         </g>
 
-                        {/* Data points */}
                         <g>
                             <circle
                                 cx="10%"
@@ -260,7 +255,6 @@ export const Hero: React.FC = () => {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center">
-                    {/* Profile Avatar */}
                     <div className="mb-8">
                         {heroConfig.avatar ? (
                             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-xl border-4 border-white">
@@ -277,7 +271,6 @@ export const Hero: React.FC = () => {
                         )}
                     </div>
 
-                    {/* Introduction */}
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                         Hi, I'm{" "}
                         <span style={{ color: "#0077b6" }}>
@@ -293,7 +286,6 @@ export const Hero: React.FC = () => {
                         {heroConfig.description}
                     </p>
 
-                    {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         {heroConfig.buttons.map((button, index) => (
                             <Button
@@ -318,7 +310,6 @@ export const Hero: React.FC = () => {
                 </div>
             </div>
 
-            {/* Scroll indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <button
                     onClick={() => handleButtonClick("#about")}

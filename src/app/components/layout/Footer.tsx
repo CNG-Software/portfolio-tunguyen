@@ -7,13 +7,11 @@ import { getSocialIconSvg } from "../../utils/socialIcons";
 export const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
-
-
     return (
         <footer className="text-white" style={{ backgroundColor: "#023e8a" }}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="mt-1 pt-2 text-center">
-                    {/* Social Media Icons */}
+                    
                     <div className="flex justify-center space-x-6 mb-6">
                         {footerConfig.social.links.map((link, index) => (
                             <a
@@ -42,14 +40,14 @@ export const Footer: React.FC = () => {
                                     }
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                                                    >
-                                        {getSocialIconSvg(link.icon)}
-                                    </svg>
+                                >
+                                    {getSocialIconSvg(link.icon)}
+                                </svg>
                             </a>
                         ))}
                     </div>
 
-                    {/* Copyright */}
+                    
                     <p className="text-gray-100 text-sm">
                         © {currentYear} {footerConfig.brand.name}.{" "}
                         {footerConfig.copyright.text}

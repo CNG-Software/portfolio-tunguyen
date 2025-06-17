@@ -26,8 +26,6 @@ export const Header: React.FC = () => {
         setIsMobileMenuOpen(false);
     };
 
-
-
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -38,7 +36,7 @@ export const Header: React.FC = () => {
         >
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    {/* Logo */}
+                    
                     <div className="flex-shrink-0">
                         <button
                             onClick={() => scrollToSection("#home")}
@@ -49,61 +47,65 @@ export const Header: React.FC = () => {
                         </button>
                     </div>
 
-                    {/* Desktop Navigation */}
+                    
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-center space-x-8">
-                            {/* Navigation Items */}
+                            
                             <div className="flex items-baseline space-x-8">
                                 {navigationConfig.navItems.map((item) => (
-                                                                    <button
-                                    key={item.name}
-                                    onClick={() => scrollToSection(item.href)}
-                                    className="text-gray-700 hover:text-[#0077b6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-[3px] border-transparent hover:border-[#0077b6]"
-                                >
-                                    {item.name}
-                                </button>
+                                    <button
+                                        key={item.name}
+                                        onClick={() =>
+                                            scrollToSection(item.href)
+                                        }
+                                        className="text-gray-700 hover:text-[#0077b6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-[3px] border-transparent hover:border-[#0077b6]"
+                                    >
+                                        {item.name}
+                                    </button>
                                 ))}
                             </div>
+
                             
-                            {/* Social Media Icons */}
                             <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-gray-200">
-                                {footerConfig.social.links.map((link, index) => (
-                                    <a
-                                        key={index}
-                                        href={link.url}
-                                        target={
-                                            link.url.startsWith("http")
-                                                ? "_blank"
-                                                : undefined
-                                        }
-                                        rel={
-                                            link.url.startsWith("http")
-                                                ? "noopener noreferrer"
-                                                : undefined
-                                        }
-                                        className="w-8 h-8 rounded-full flex items-center justify-center text-gray-600 hover:text-[#0077b6] hover:bg-gray-100 transition-all duration-200"
-                                        aria-label={link.name}
-                                    >
-                                        <svg
-                                            className="w-4 h-4"
-                                            fill={
-                                                link.icon === "linkedin" ||
-                                                link.icon === "github"
-                                                    ? "currentColor"
-                                                    : "none"
+                                {footerConfig.social.links.map(
+                                    (link, index) => (
+                                        <a
+                                            key={index}
+                                            href={link.url}
+                                            target={
+                                                link.url.startsWith("http")
+                                                    ? "_blank"
+                                                    : undefined
                                             }
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
+                                            rel={
+                                                link.url.startsWith("http")
+                                                    ? "noopener noreferrer"
+                                                    : undefined
+                                            }
+                                            className="w-8 h-8 rounded-full flex items-center justify-center text-gray-600 hover:text-[#0077b6] hover:bg-gray-100 transition-all duration-200"
+                                            aria-label={link.name}
                                         >
-                                            {getSocialIconSvg(link.icon)}
-                                        </svg>
-                                    </a>
-                                ))}
+                                            <svg
+                                                className="w-4 h-4"
+                                                fill={
+                                                    link.icon === "linkedin" ||
+                                                    link.icon === "github"
+                                                        ? "currentColor"
+                                                        : "none"
+                                                }
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                {getSocialIconSvg(link.icon)}
+                                            </svg>
+                                        </a>
+                                    )
+                                )}
                             </div>
                         </div>
                     </div>
 
-                    {/* Mobile menu button */}
+                    
                     <div className="md:hidden">
                         <button
                             onClick={() =>
@@ -145,7 +147,7 @@ export const Header: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Mobile Navigation */}
+                
                 {isMobileMenuOpen && (
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">

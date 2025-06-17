@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tu Nguyen - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js and TypeScript, featuring a config-driven architecture for easy customization.
 
-First, run the development server:
+## 🚀 Getting Started
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+- Node.js (version 18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd portfolio-tunguyen
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the website.
+
+## ⚙️ Configuration
+
+This portfolio is designed to be easily customizable through JSON configuration files located in the `src/config/` directory. You can modify any section of the website without touching the code.
+
+### Available Configuration Files
+
+| File | Description |
+|------|-------------|
+| `hero.json` | Header section with name, title, description, and buttons |
+| `about.json` | About section with journey text and key highlights |
+| `skills.json` | Technical skills organized by categories |
+| `projects.json` | Featured projects with descriptions and links |
+| `experiences.json` | Work experience and education |
+| `qualifications.json` | Additional certifications and qualifications |
+| `sections.json` | Section titles and labels |
+| `navigation.json` | Navigation menu items |
+| `contact.json` | Contact information and availability |
+
+### How to Customize Sections
+
+#### 1. Personal Information (Hero Section)
+Edit `src/config/hero.json`:
+```json
+{
+    "name": "Your Name",
+    "title": "Your Title",
+    "description": "Your description...",
+    "avatar": "/your-avatar.png"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2. About Section
+Edit `src/config/about.json`:
+- Update `journey` array with your personal story paragraphs
+- Modify `highlights` to showcase your key strengths with colors and icons
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### 3. Skills
+Edit `src/config/skills.json`:
+- Add/remove skill categories
+- Update skills within each category
+- Choose from available colors: `blue`, `green`, `purple`, `orange`, `indigo`, `pink`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### 4. Projects
+Edit `src/config/projects.json`:
+- Add your projects with title, description, technologies, and GitHub links
+- Include impact metrics to highlight achievements
 
-## Learn More
+#### 5. Experience & Education
+Edit `src/config/experiences.json`:
+- Add work experience and education entries
+- Include technologies, descriptions, and time periods
 
-To learn more about Next.js, take a look at the following resources:
+### Color Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website uses a consistent color scheme. Available colors for highlights and skills:
+- `blue` - Primary brand color
+- `green` - Success/growth themes
+- `purple` - Creative/innovation themes
+- `orange` - Energy/management themes
+- `indigo` - Technology themes
+- `pink` - Design/creative themes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Icon Options
 
-## Deploy on Vercel
+Available icons for highlights and qualifications:
+- `lightbulb` - Ideas/innovation
+- `lightning` - Speed/efficiency
+- `users` - Collaboration/people
+- `chart` - Analytics/data
+- `star` - Achievement/excellence
+- `book` - Learning/education
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Available Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+### Project Structure
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── layout/     # Header, Footer
+│   │   ├── sections/   # Hero, About, Skills, etc.
+│   │   └── ui/         # Reusable UI components
+│   └── utils/          # Utility functions
+├── config/             # JSON configuration files
+└── public/             # Static assets
+```
+
+## 📝 Adding New Sections
+
+To add a new section:
+1. Create a new JSON config file in `src/config/`
+2. Create a new component in `src/app/components/sections/`
+3. Import and add the component to `src/app/page.tsx`
+
+## 🚀 Deployment
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically on every push
+
+For other deployment options, run:
+```bash
+npm run build
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).

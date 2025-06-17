@@ -2,7 +2,6 @@ import React from "react";
 import { Badge } from "../ui/Badge";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/Card";
 import skillsConfig from "../../../config/skills.json";
-import sectionsConfig from "../../../config/sections.json";
 
 export const Skills: React.FC = () => {
     const { skillCategories } = skillsConfig;
@@ -27,7 +26,8 @@ export const Skills: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        Technical <span style={{ color: '#0077B6' }}>Skills</span>
+                        Technical{" "}
+                        <span style={{ color: "#0077B6" }}>Skills</span>
                     </h2>
                 </div>
 

@@ -9,12 +9,11 @@ export const About: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        About <span style={{ color: '#0077B6' }}>Me</span>
+                        About <span style={{ color: "#0077B6" }}>Me</span>
                     </h2>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    {/* Personal Story */}
                     <div>
                         <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                             {sectionsConfig.about.journeyTitle}
@@ -26,7 +25,6 @@ export const About: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Key Highlights */}
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold text-gray-900">
                             Key Highlights
@@ -35,22 +33,41 @@ export const About: React.FC = () => {
                         {aboutConfig.highlights.map((highlight, index) => {
                             const getBorderClass = (color: string) => {
                                 const colorMap: { [key: string]: string } = {
-                                    blue: 'border-l-[#0077b6]',
-                                    green: 'border-l-[#10b981]',
-                                    purple: 'border-l-[#8b5cf6]',
-                                    orange: 'border-l-[#f59e0b]'
+                                    blue: "border-l-[#0077b6]",
+                                    green: "border-l-[#10b981]",
+                                    purple: "border-l-[#8b5cf6]",
+                                    orange: "border-l-[#f59e0b]",
                                 };
-                                return colorMap[color] || 'border-l-[#0077b6]';
+                                return colorMap[color] || "border-l-[#0077b6]";
                             };
 
                             const getIconColorClasses = (color: string) => {
-                                const colorMap: { [key: string]: { bg: string; text: string } } = {
-                                    blue: { bg: 'bg-blue-100', text: 'text-blue-600' },
-                                    green: { bg: 'bg-green-100', text: 'text-green-600' },
-                                    purple: { bg: 'bg-purple-100', text: 'text-purple-600' },
-                                    orange: { bg: 'bg-orange-100', text: 'text-orange-600' }
+                                const colorMap: {
+                                    [key: string]: { bg: string; text: string };
+                                } = {
+                                    blue: {
+                                        bg: "bg-blue-100",
+                                        text: "text-blue-600",
+                                    },
+                                    green: {
+                                        bg: "bg-green-100",
+                                        text: "text-green-600",
+                                    },
+                                    purple: {
+                                        bg: "bg-purple-100",
+                                        text: "text-purple-600",
+                                    },
+                                    orange: {
+                                        bg: "bg-orange-100",
+                                        text: "text-orange-600",
+                                    },
                                 };
-                                return colorMap[color] || { bg: 'bg-blue-100', text: 'text-blue-600' };
+                                return (
+                                    colorMap[color] || {
+                                        bg: "bg-blue-100",
+                                        text: "text-blue-600",
+                                    }
+                                );
                             };
 
                             const getIconSvg = (icon: string) => {
@@ -103,13 +120,17 @@ export const About: React.FC = () => {
                                 }
                             };
 
-                            const iconColors = getIconColorClasses(highlight.color);
-                            
+                            const iconColors = getIconColorClasses(
+                                highlight.color
+                            );
+
                             return (
                                 <Card
                                     key={index}
                                     hover
-                                    className={`border-l-4 ${getBorderClass(highlight.color)}`}
+                                    className={`border-l-4 ${getBorderClass(
+                                        highlight.color
+                                    )}`}
                                 >
                                     <CardContent>
                                         <div className="flex items-start space-x-4">

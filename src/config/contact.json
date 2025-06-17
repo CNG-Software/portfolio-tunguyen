@@ -20,11 +20,6 @@
     ],
     "availability": {
         "title": "Available for:",
-        "items": [
-            "Full-time data science positions"
-        ]
-    },
-    "messages": {
-        "successAlert": "Thank you for your message! I'll get back to you soon."
+        "items": ["Full-time data science positions"]
     }
 }

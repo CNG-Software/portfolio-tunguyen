@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "../ui/Button";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/Card";
 import contactConfig from "../../../config/contact.json";
 
 export const Contact: React.FC = () => {
@@ -12,24 +10,6 @@ export const Contact: React.FC = () => {
         subject: "",
         message: "",
     });
-
-    const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Handle form submission here
-        console.log("Form submitted:", formData);
-        // You can integrate with a form service like Formspree, Netlify Forms, or your own backend
-        alert(contactConfig.messages.successAlert);
-        setFormData({ name: "", email: "", subject: "", message: "" });
-    };
 
     const getIconSvg = (iconType: string) => {
         switch (iconType) {
@@ -89,7 +69,6 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
-        
                     <div className="space-y-8">
                         <div>
                             <p className="text-gray-600 mb-8 leading-relaxed">
@@ -137,7 +116,12 @@ export const Contact: React.FC = () => {
                                                 }
                                                 className="text-blue-600 hover:text-blue-700 transition-colors"
                                             >
-                                                {info.link.startsWith('mailto:') ? info.link.replace('mailto:', '') : info.link}
+                                                {info.link.startsWith("mailto:")
+                                                    ? info.link.replace(
+                                                          "mailto:",
+                                                          ""
+                                                      )
+                                                    : info.link}
                                             </a>
                                         ) : (
                                             <span className="text-gray-600">

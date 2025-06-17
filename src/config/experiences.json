@@ -11,14 +11,7 @@
             "Built and maintained interactive dashboards in Power BI and Tableau",
             "Collaborated with cross-functional stakeholders in marketing, product, and business development to define KPIs"
         ],
-        "technologies": [
-            "Python",
-            "SQL",
-            "R",
-            "Excel",
-            "Power BI",
-            "Tableau"
-        ]
+        "technologies": ["Python", "SQL", "R", "Excel", "Power BI", "Tableau"]
     },
     {
         "type": "education",

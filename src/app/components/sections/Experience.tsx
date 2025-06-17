@@ -133,13 +133,13 @@ export const Experience: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        Experience & <span style={{ color: '#0077B6' }}>Education</span>
+                        Experience &{" "}
+                        <span style={{ color: "#0077B6" }}>Education</span>
                     </h2>
                 </div>
 
                 <div className="max-w-4xl mx-auto">
                     <div className="relative">
-                        {/* Timeline line */}
                         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300 hidden md:block"></div>
 
                         {experiences.map((exp, index) => (
