@@ -24,6 +24,7 @@ export const metadata: Metadata = {
         "Analytics",
     ],
     authors: [{ name: "Tu Nguyen" }],
+    viewport: "width=device-width, initial-scale=1",
     openGraph: {
         title: "Tu Nguyen",
         description:
@@ -39,6 +40,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="scroll-smooth">
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
             >

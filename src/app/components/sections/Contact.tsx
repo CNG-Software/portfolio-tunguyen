@@ -60,31 +60,31 @@ export const Contact: React.FC = () => {
     };
 
     return (
-        <section id="contact" className="py-20 bg-white">
+        <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                         {contactConfig.title}
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
-                    <div className="space-y-8">
+                <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 sm:gap-12 max-w-4xl mx-auto">
+                    <div className="space-y-6 sm:space-y-8">
                         <div>
-                            <p className="text-gray-600 mb-8 leading-relaxed">
+                            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed text-center sm:text-left">
                                 {contactConfig.description}
                             </p>
                         </div>
 
-                        <div className="space-y-4">
+                        <div className="space-y-3 sm:space-y-4">
                             {contactConfig.contactInfo.map((info, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center space-x-4"
+                                    className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 rounded-lg hover:bg-gray-50 transition-colors"
                                 >
-                                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 flex-shrink-0">
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 flex-shrink-0">
                                         <svg
-                                            className="w-6 h-6"
+                                            className="w-5 h-5 sm:w-6 sm:h-6"
                                             fill={
                                                 info.icon === "linkedin" ||
                                                 info.icon === "github"
@@ -97,8 +97,8 @@ export const Contact: React.FC = () => {
                                             {getIconSvg(info.icon)}
                                         </svg>
                                     </div>
-                                    <div>
-                                        <h4 className="font-medium text-gray-900">
+                                    <div className="min-w-0 flex-1">
+                                        <h4 className="font-medium text-gray-900 text-sm sm:text-base">
                                             {info.title}
                                         </h4>
                                         {info.link ? (
@@ -114,7 +114,7 @@ export const Contact: React.FC = () => {
                                                         ? "noopener noreferrer"
                                                         : undefined
                                                 }
-                                                className="text-blue-600 hover:text-blue-700 transition-colors"
+                                                className="text-blue-600 hover:text-blue-700 transition-colors text-xs sm:text-sm break-all"
                                             >
                                                 {info.link.startsWith("mailto:")
                                                     ? info.link.replace(
@@ -124,7 +124,7 @@ export const Contact: React.FC = () => {
                                                     : info.link}
                                             </a>
                                         ) : (
-                                            <span className="text-gray-600">
+                                            <span className="text-gray-600 text-xs sm:text-sm">
                                                 {info.title}
                                             </span>
                                         )}
@@ -133,8 +133,8 @@ export const Contact: React.FC = () => {
                             ))}
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-6">
-                            <h4 className="font-semibold text-gray-900 mb-3">
+                        <div className="bg-gray-50 rounded-lg p-4 sm:p-6">
+                            <h4 className="font-semibold text-gray-900 mb-3 text-sm sm:text-base">
                                 {contactConfig.availability.title}
                             </h4>
                             <ul className="space-y-2 text-gray-600">
@@ -142,10 +142,10 @@ export const Contact: React.FC = () => {
                                     (item, index) => (
                                         <li
                                             key={index}
-                                            className="flex items-center"
+                                            className="flex items-start text-xs sm:text-sm"
                                         >
                                             <svg
-                                                className="w-4 h-4 text-green-500 mr-2"
+                                                className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                                                 fill="none"
                                                 stroke="currentColor"
                                                 viewBox="0 0 24 24"
@@ -157,7 +157,7 @@ export const Contact: React.FC = () => {
                                                     d="M5 13l4 4L19 7"
                                                 />
                                             </svg>
-                                            {item}
+                                            <span>{item}</span>
                                         </li>
                                     )
                                 )}

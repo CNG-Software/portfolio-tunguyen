@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
                 {particles.map((particle) => (
                     <div
                         key={particle.id}
-                        className={`absolute text-blue-300 opacity-20 sm:opacity-40 select-none hover:opacity-60 transition-opacity duration-300 animate-float-${
+                        className={`absolute text-blue-300 opacity-10 sm:opacity-20 md:opacity-40 select-none hover:opacity-60 transition-opacity duration-300 animate-float-${
                             particle.id % 4
                         } hidden sm:block`}
                         style={
@@ -90,8 +90,8 @@ export const Hero: React.FC = () => {
                                 left: `${particle.x}%`,
                                 top: `${particle.y}%`,
                                 fontSize: `${Math.max(
-                                    particle.size * 0.6,
-                                    12
+                                    particle.size * 0.4,
+                                    8
                                 )}px`,
                                 animationDelay: `${particle.animationDelay}s`,
                                 filter: "drop-shadow(0 0 4px rgba(0, 119, 182, 0.3))",
@@ -121,7 +121,7 @@ export const Hero: React.FC = () => {
                         </defs>
                         <rect width="100%" height="100%" fill="url(#grid)" />
 
-                        <g className="animate-pulse">
+                        <g className="animate-pulse hidden sm:block">
                             <line
                                 x1="10%"
                                 y1="20%"
