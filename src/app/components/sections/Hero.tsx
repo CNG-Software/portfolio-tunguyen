@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
     >([]);
 
     useEffect(() => {
-        // Data science symbols and elements
+        
         const symbols = [
             "∑",
             "μ",
@@ -63,13 +63,12 @@ export const Hero: React.FC = () => {
 
     const handleButtonClick = (target: string) => {
         if (target.startsWith("#")) {
-            // Internal scroll to section
+            
             const element = document.querySelector(target);
             if (element) {
                 element.scrollIntoView({ behavior: "smooth" });
             }
         } else {
-            // External link
             window.open(target, "_blank", "noopener,noreferrer");
         }
     };

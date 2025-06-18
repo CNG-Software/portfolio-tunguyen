@@ -43,8 +43,8 @@ export const About: React.FC = () => {
                                 spaceBetween={0}
                                 slidesPerView={1}
                                 autoplay={{
-                                    delay: 4000,
-                                    disableOnInteraction: false,
+                                    delay: aboutConfig.carousel.delay,
+                                    disableOnInteraction: aboutConfig.carousel.disableOnInteraction,
                                 }}
                                 pagination={{
                                     clickable: true,
@@ -52,7 +52,7 @@ export const About: React.FC = () => {
                                     bulletActiveClass:
                                         "swiper-pagination-bullet-active",
                                 }}
-                                loop={true}
+                                loop={aboutConfig.carousel.loop}
                                 className="w-full h-full"
                             >
                                 {aboutConfig.slides.map((slide, index) => (

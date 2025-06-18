@@ -1,4 +1,9 @@
 {
+    "carousel": {
+        "delay": 5000,
+        "disableOnInteraction": false,
+        "loop": true
+    },
     "slides": [
         {
             "src": "/slide1.png",
@@ -6,13 +11,13 @@
             "title": "Title #1"
         },
         {
-            "src": "/slide2.png", 
+            "src": "/slide2.png",
             "alt": "Slide 2",
             "title": "Title #2"
         },
         {
             "src": "/slide3.png",
-            "alt": "Slide 3", 
+            "alt": "Slide 3",
             "title": "Title #3"
         }
     ],
