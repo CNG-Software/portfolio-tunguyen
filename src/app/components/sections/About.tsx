@@ -1,7 +1,13 @@
+"use client";
+
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Card, CardContent } from "../ui/Card";
 import aboutConfig from "../../../config/about.json";
 import sectionsConfig from "../../../config/sections.json";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export const About: React.FC = () => {
     return (
@@ -13,7 +19,8 @@ export const About: React.FC = () => {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
+                {/* First Row: My Journey + Image Carousel */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start mb-12 sm:mb-16">
                     <div className="order-2 lg:order-1">
                         <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
                             {sectionsConfig.about.journeyTitle}
@@ -25,11 +32,47 @@ export const About: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
-                        <h3 className="text-xl sm:text-2xl font-semibold text-gray-900">
-                            Soft Skills
-                        </h3>
+                    {/* Carousel */}
+                    <div
+                        className="order-1 lg:order-2"
+                        style={{ marginTop: "60px" }}
+                    >
+                        <div className="w-full h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
+                            <Swiper
+                                modules={[Autoplay, Pagination]}
+                                spaceBetween={0}
+                                slidesPerView={1}
+                                autoplay={{
+                                    delay: 4000,
+                                    disableOnInteraction: false,
+                                }}
+                                pagination={{
+                                    clickable: true,
+                                    bulletClass: "swiper-pagination-bullet",
+                                    bulletActiveClass:
+                                        "swiper-pagination-bullet-active",
+                                }}
+                                loop={true}
+                                className="w-full h-full"
+                            >
+                                {aboutConfig.slides.map((slide, index) => (
+                                    <SwiperSlide key={index}>
+                                        <img
+                                            src={slide.src}
+                                            alt={slide.alt}
+                                            className="w-full h-full object-cover"
+                                            title={slide.title}
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
 
+                {/* Second Row: Soft Skills */}
+                <div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                         {aboutConfig.highlights.map((highlight, index) => {
                             const getBorderClass = (color: string) => {
                                 const colorMap: { [key: string]: string } = {
